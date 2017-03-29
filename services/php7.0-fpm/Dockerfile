@@ -20,7 +20,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-COPY fix_permission.sh /usr/local/bin/fix_permission
+COPY fix_permission.sh /usr/local/bin/fix_permission.sh
 
 WORKDIR /app
 
